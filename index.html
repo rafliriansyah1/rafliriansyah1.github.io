@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo_navbar">MOJI</label>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <img src="moji.png" alt="Logo Perusahaan" class="logo" style="width: 100px;">
+            <form method="post" action="" name="contact-form" enctype="multipart/form-data">
+                <h3>INPUT LIST BARANG</h3>
+                <input type="text" name="nama-barang" placeholder="Nama Barang">
+                <input type="text" name="id-barang" placeholder="ID Barang">
+                <h5>Tanggal Pembelian</h5>
+                <input type="date" name="tanggal-pembelian" placeholder="Tanggal Pembelian">
+                <input type="text" name="spesifikasi" placeholder="Spesifikasi">
+                <textarea name="catatan" rows="7" placeholder="Catatan"></textarea>
+                <form action="upload.php" method="POST" enctype="multipart/form-data">
+                  <div class="mb-3">
+                    <label for="file" class="form-label">Select file</label>
+                    <input type="file" class="form-control" name="file" id = "file">
+                  </div>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </div>
+    <!--<script src="sheet.js"></script>-->
+</body>
+</html>
